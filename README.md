@@ -89,7 +89,7 @@ done < "CSV/donnees.csv"
 ## III. Sauvegarde des données via crontab
 
 ### Configuration de la sauvegarde automatique
-Réaliser après que  vos conteneurs Docker sont en cours d'exécution et que l'importation des données CSV a été effectuée avec succès.
+Réaliser après que  vos conteneurs Docker soient en cours d'exécution et que l'importation des données CSV a été effectuée avec succès.
 
 1. Exécutez le script Bash suivant pour configurer la sauvegarde automatique des données via crontab :
 
