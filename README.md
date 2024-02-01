@@ -199,3 +199,24 @@ Réaliser après que  vos conteneurs Docker soient en cours d'exécution et que 
     ```
 
 3. Les sauvegardes seront effectuées automatiquement selon la planification définie dans le fichier `crontabs`,c'est-à-dire le dimanche à 23h, mais également une sauvegarde toute les 5 minutes. Vous pouvez également exécuter manuellement le script `svg_hebdo.sh` pour effectuer une sauvegarde à tout moment.
+4. ## IV. Nettoyage et Purge des Conteneurs
+
+### Fichier `purge.sh`
+
+Pour nettoyer et purger les conteneurs, les volumes, et les images Docker, utilisez le script Bash suivant :
+
+#### `purge.sh`
+
+```bash
+#!/bin/bash
+
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+
+docker network prune -f
+docker volume rm $(docker volume ls -q)
+
+docker rmi cron_img
+
+echo "Tous les conteneurs et leurs volumes ont bien été supprimés."
+
