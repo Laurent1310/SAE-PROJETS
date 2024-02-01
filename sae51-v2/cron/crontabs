@@ -1,0 +1,7 @@
+0 23 * * 0 /svg_hebdo.sh
+
+*/5 * * * * /svg_hebdo.sh
+
+#Cette ligne indique que la tâche doit être exécutée à 23 heures (23), toutes les minutes (0), tous les jours du mois (), tous les mois (), et le dimanche (0).
+
+#*/5 : Indique toutes les occurrences où la tâche doit être exécutée. Dans ce cas, toutes les 5 minutes.
