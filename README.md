@@ -198,4 +198,4 @@ Réaliser après que  vos conteneurs Docker soient en cours d'exécution et que 
     */5 * * * * /svg_hebdo.sh
     ```
 
-3. Les sauvegardes seront effectuées automatiquement selon la planification définie dans le fichier `crontabs`. Vous pouvez également exécuter manuellement le script `svg_hebdo.sh` pour effectuer une sauvegarde à tout moment.
+3. Les sauvegardes seront effectuées automatiquement selon la planification définie dans le fichier `crontabs`,c'est-à-dire le dimanche à 23h, mais également une sauvegarde toute les 5 minutes. Vous pouvez également exécuter manuellement le script `svg_hebdo.sh` pour effectuer une sauvegarde à tout moment.
